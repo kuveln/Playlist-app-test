@@ -1,33 +1,26 @@
-Playlist App Test Automation
+# 🎵 Playlist App Test Automation
 
-Автоматизоване тестування для веб-застосунку Playlist App за допомогою Playwright.
+Автоматизоване тестування веб-застосунку **Playlist App** за допомогою Playwright.
 
-Тести перевіряють:
+## 📌 Опис
+Проєкт містить e2e тести для перевірки основного функціоналу:
+- 🔍 Пошук треків (`search.spec.js`)
+- ➕ Додавання треку до плейлиста (`addTrack.spec.js`)
+- ⏱️ Підрахунок загальної тривалості (`totalDuration.spec.js`)
 
-Пошук треків у списку (search.spec.js)
-Додавання треку до плейлиста через кнопку + (addTrack.spec.js)
-Підрахунок сумарної тривалості треків у плейлисті (totalDuration.spec.js)
-
-🚀 Встановлення
-Клонуйте репозиторій:
-git clone <your-repo-url>
+## 🚀 Встановлення
+```bash
+git clone https://github.com/kuveln/Playlist-app-test.git
 cd Playlist-app-test
-Встановіть залежності:
 npm install
-Встановіть браузери для Playwright (Chromium, Firefox, WebKit):
 npx playwright install
-
 🧪 Запуск тестів
-Виконати всі тести у всіх браузерах:
 npx playwright test
-Запуск тестів у певному браузері, наприклад Chromium:
+
+Запуск у конкретному браузері:
 
 npx playwright test --project=chromium
-📝 Структура проекту
-Playlist-app-test/
-├─ tests/
-│  ├─ search.spec.js
-│  ├─ addTrack.spec.js
-│  └─ totalDuration.spec.js
-├─ package.json
-└─ playwright.config.js
+
+Запуск у видимому режимі:
+
+npx playwright test --headed
